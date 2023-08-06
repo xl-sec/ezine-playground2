@@ -2,7 +2,7 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # every 30 minutes
+    - cron: '*/15 9-12 * * 5' # every 30 minutes
   workflow_dispatch: # on button click
 
 jobs:
@@ -18,3 +18,4 @@ jobs:
           base: main
           head: main
           ignore_fail: true
+          retries: 0
