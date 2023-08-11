@@ -1,3 +1,5 @@
+# Note: The workflow needs at least permissions to create and approve pull requests, and maybe R/W on all repos in scope?
+# Change under Settings > Actions > General and then Workflow permissions
 name: Sync Fork
 
 on:
