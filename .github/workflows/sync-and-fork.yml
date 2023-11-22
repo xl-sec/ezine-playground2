@@ -8,13 +8,13 @@ on:
   workflow_dispatch:  # click the button on Github repo!
 
 permissions:
-  contents: write
-  pages: write
-  # id-token: write
+  contents: write # Needed to create the fork commit
+  pages: write    # Needed to deploy github-pages
+  id-token: write # Needed to deploy github-pages
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+#concurrency:
+#  group: "pages"
+#  cancel-in-progress: false
 
 jobs:
   sync_latest_from_upstream:
