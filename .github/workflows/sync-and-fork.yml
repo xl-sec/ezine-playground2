@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
   pages: write
-  id-token: write
+  id-token: read
 
 concurrency:
   group: "pages"
